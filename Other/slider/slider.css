@@ -1,0 +1,91 @@
+.container {
+/*	position: absolute;	*/
+/*	display: flex;*/
+	
+}
+
+.image-mask {
+	margin: auto auto;
+	margin-top: 80px;
+	background-image: url(images/border.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 800px;
+	height: 450px;
+	display: flex;
+	box-shadow: 0 8px 20px black; 
+	align-items: center;
+	justify-content: center;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: relative;
+	
+}
+
+.slider-image, .slider-image-over {
+	background: url(images/img1.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	z-index: -3;
+}
+
+.slider-image-over {
+	z-index: -2;
+	animation-duration: 800ms;
+	animation-timing-function: linear;
+	animation-delay: 0;
+	animation-iteration-count: 1;
+	animation-name: animationSlideOpacityMinus;
+}	
+
+.filter {
+	background: -webkit-radial-gradient(center, rgba(0, 0, 0, 0.1) 60%,rgb(0, 0, 0) 120%);
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	z-index: -1;
+}
+
+.btn-slider {
+	background: url('images/st.png') no-repeat;
+	background-size: contain;
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 85%;
+	margin-top: -100px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.btn-slider-left {
+	left: 10%;
+	transform: scale(-1,1);
+}
+
+.btn-slider:click{
+	width: 10px;
+}
+
+@keyframes animationSlideOpacityMinus {
+	0% { 
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes animationSlideOpacityPlus {
+	0% { 
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ссылки и изображения</title>
+        <meta name="description" content='Конспект по курсу "ссылки и изображения"'/>
+        <meta name="keywords" content="ссылки, изображения"/>
+        <link href="Style/tables.css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+        <h3>Пример ссылки:</h3>
+            <a title="Всплывающая подсказка" href="http://ruseller.com/htmlshpora.php?id=23">Шпаргалки html</a>
+        <h3>Пример картинки:</h3>
+            <img src="resources/html5.png" width="60" h>
+        <h3>Пример ипользования алетрнативного текста для несуществующей картинки</h3>
+            <img src="resources/notimg.png" alt="Картинка которой нет">
+        <h3>Ссылка + изображение</h3>
+            <a href="https://google.ru"><img src="resources/html5.png" height="60"></a>
+        <h3 >Вариант таблицы без CSS</h3>
+            <table border="1">
+                <tr>
+                    <td>test</td><td>1</td><td>2</td>
+                </tr>
+                <tr>
+                    <td>test1</td><td>1</td><td>2</td>
+                </tr>
+                <tr>
+                    <td>test2</td><td>1</td><td>2</td>
+                </tr>
+            </table>
+        
+        <h3>Вариант таблицы c CSS N1</h3>
+            <table class="table1">
+                <tr>
+                    <td class="td1">test</td>
+                    <td class="td1">1</td>
+                    <td class="td1">1</td>
+                </tr>
+                <tr>
+                    <td class="td1">test</td>
+                    <td class="td1">1</td>
+                    <td class="td1">1</td>
+                </tr>
+                <tr>
+                    <td class="td1">test</td>
+                    <td class="td1">1</td>
+                    <td class="td1">1</td>
+                </tr>
+            </table>
+        
+        <h3>Вариант таблицы c CSS N2</h3>
+            <table class="table2">
+                <tr>
+                    <td class="td2">test</td>
+                    <td class="td2">1</td>
+                    <td class="td2">1</td>
+                </tr>
+                <tr>
+                    <td class="td2">test</td>
+                    <td class="td2">1</td>
+                    <td class="td2">1</td>
+                </tr>
+                <tr>
+                    <td class="td2">test</td>
+                    <td class="td2">1</td>
+                    <td class="td2">1</td>
+                </tr>
+            </table>
+        
+        <h3>Вариант таблицы с CSS N3</h3>
+            <table class="table3">
+                <tr>
+                    <td class="td3">Город</td><td class="td3">Посещения</td><td class="td3">Страниц</td><td class="td3">Время</td>
+                </tr>
+                <tr>
+                    <td class="td3">СПб</td><td class="td3">199</td><td class="td3">18,02</td><td class="td3">00:13:45</td>
+                </tr>
+                <tr>
+                    <td class="td3">Москва</td><td class="td3">69</td><td class="td3">1,48</td><td class="td3">00:00:44</td>
+                </tr>
+                <tr>
+                    <td class="td3">Киев</td><td class="td3">5</td><td class="td3">13,43</td><td class="td3">00:18:07</td>
+                </tr>
+            </table>
+        
+        <h3>Более сложный вариант таблицы с CSS</h3>
+            <table class="table4">
+                <caption>Заголовок таблицы</caption>
+                <tr>
+                    <th class="td4" rowspan="2">Браузер</th>
+                    <th class="td4" colspan="2">Посещения</th>
+                </tr>
+                <tr>
+                    <th class="td4">Количество</th><th class="td4">В процентах</th>
+                </tr>
+                <tr>
+                    <td class="td4">Mozilla Firefox</td><td class="td4">199</td><td class="td4">59%</td>
+                </tr>
+                <tr>
+                    <td class="td4">Google Chrome</td><td class="td4">69</td><td class="td4">11%</td>
+                </tr>
+                <tr>
+                    <td class="td4">Safari</td><td class="td4">5</td><td class="td4">30%</td>
+                </tr>
+            </table>
+        
+        <br>    
+    </body>
+
+</html>

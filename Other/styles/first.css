@@ -1,0 +1,24 @@
+.main {
+	background: black;
+	margin: auto auto;
+	position: relative;
+	width:50%;
+	height:50%;
+	overflow: hidden;
+}
+
+.in-main {
+	
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	background: lightgray;
+	left: 50%;
+  -webkit-transition-property:all;
+  -webkit-transition-duration:1s;
+
+}
+
+.in-main:hover {
+	left: -100%;
+}

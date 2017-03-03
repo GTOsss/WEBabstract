@@ -1,0 +1,34 @@
+body {
+    width: 300px;
+    margin: 0; 
+    padding: 0;
+    padding-top: 15px;
+    font-size: 0;
+    text-align: center;
+    background: white;
+}
+
+.block {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    background-color: black;
+}
+
+.block1 {
+    background-image: url('https://htmlacademy.ru/assets/course13/cat_poo.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+	display: 
+}
+
+/*
+Используемые изображения:
+https://htmlacademy.ru/assets/course13/cat_poo.png
+https://htmlacademy.ru/assets/course13/cat_hiss.png
+https://htmlacademy.ru/assets/course13/cat_walk.png
+https://htmlacademy.ru/assets/course13/cat_slippers.png
+https://htmlacademy.ru/assets/course13/cat_grumpy.png
+*/

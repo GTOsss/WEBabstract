@@ -1,0 +1,36 @@
+.conteiner {
+	background: black;
+	border: 10px solid gray;
+	width: 310px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+.greenbox {
+	background: green;
+	height: 100px;
+	width: 200px;
+	display: inline-block;
+}
+
+.bluebox {
+	background: blue;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	margin: 0px;
+}
+
+.conteiner::after {
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	vertical-align: sub
+}
+
+p {
+	background: #99d999;
+	padding: 10px;
+}

@@ -1,0 +1,211 @@
+div{
+    margin-bottom: 15px;
+    padding: 10px 25px 10px 25px;
+    background-color: #4c6071
+}
+
+td{
+    border-radius: 8px;
+    border-top: 2px solid black;
+    background-color: #1a3d4e;
+}
+
+.footer, .right-column, .left-column, .header{
+    color: #c7ddff;
+}
+
+.header{
+    background-color: #4086b2;
+}
+
+.left-column{
+    width: 70%;
+    min-height: 100px;
+    background-color: #103250;
+    float: left;
+    outline: 4px solid #3081c9;
+}
+
+.right-column{
+    width: 20%;
+    min-height: 100px;
+    background-color: #1a4f7e;
+    float: right;
+    border-radius: 12px;
+}
+
+.footer{
+    clear: both;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.div-first{
+    float: left;
+    background-color: #7796b1;
+    margin-left: 10px;
+    border-radius: 21px;
+    border: 2px solid #1d1d1d;
+
+}
+
+.div-second{
+    float: left;
+    background-color: #667684;
+    margin-left: 10px;
+    border-radius: 21px;
+    border: 2px solid #1d1d1d;
+}
+
+.div-third{
+    float: left;
+    background-color: #388157;
+    margin-left: 10px;
+    border-radius: 21px;
+    border: 2px solid #1f3127;
+}
+
+.table-test{
+    color: #3fa5ff;
+    background-color: #30465a;
+    min-width: 300px;
+    min-height: 80px;
+    text-align: center;
+    border-radius: 21px;
+    border: 4px solid rgba(0, 0, 0, 0.38);
+    padding: 4px;
+    border-spacing: 6px;
+}
+
+/*контекстные селекторы для вложенных друг в друга тегов: */
+.div-second .table-test td{
+    background-color: #00213c;
+    color: #3fa9ff;
+}
+
+.div-second .table-test th{
+    color: #72a3cb;
+}
+
+.div-second .table-test{
+    border-spacing: 4px;
+}
+
+.div-second .table-test td{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.div-second .table-test td:hover{
+    background-color: #00345f;
+}
+
+.div-second .table-test{
+    background-color: #37434b;
+}
+
+/*дочерний селектор*/
+.div-third > .table-test{
+    background-color: #234b2a;
+    color: white;
+}
+
+.div-third > .table-test td{
+    background-color: #082e0f
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.div-1{
+    clear: both;
+}
+
+.div-1, .div-2, .div-3, .div-4{
+    background-color: #888888;
+    float: left;
+    margin: 10px 15px 10px 15px;
+    height: 150px;
+    width: 240px;
+}
+
+/*соседние селекторы для тегов расположенных рядом друг с другом*/
+.div-2 + .div-3{
+    background-color: #4e4e4e;
+}
+
+p{
+    font-weight: 
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+ul{
+    clear: both;
+}
+
+li {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 10px 10px 0px 0px;
+    background: #6d6d6d;
+    border: 1px solid #1c1c1c;
+    font-size: 0;
+    border-radius:50%;
+}
+
+/*псевдоклассы*/
+li:last-child{
+    background-color: #e0e0e0;
+}
+
+li:first-child{
+    background-color: #68b9ff;
+}
+
+
+li:nth-child(3){
+    background-color: darkred;
+}
+
+ul + ul li:nth-child(1n){
+    background-color: black;
+    width: 10px;
+    height: 10px;
+} 
+
+ul + ul li:nth-child(2n){
+    background-color: white;
+} 
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*когда наведен курсор*/
+.div-2:hover{
+    background-color: #604242;
+}
+
+/*селекторы атрибутов*/
+
+input[type="button"]{
+    width: 80px;
+    height: 30px;
+    background-color: #6f1a1a;
+    border-color: #c95959;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto auto auto auto;
+}
+
+input[value="Ок"]{
+    background-color: #3b6540;
+    border-color: #6effa6;
+    color: white;
+}
+
+/*селектор по id*/
+#div-1{
+    background-color: #42451a;
+}
